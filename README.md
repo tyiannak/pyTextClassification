@@ -37,12 +37,14 @@ Given a trained model, and an unknown document, the following command syntax is 
 python textClassification.py classifyFile -i <pathToUnknownDocument> --methodname <modelFileName>
 ```
 
-This repository already contains a trained SVM model (`svmMoviesPlot5Classes`) that discriminates between 7 classes of movie plots. The files `sample_pulpFiction` and `sample_lordoftherings` contain two plot examples that can be used as unknown documents for testing. 
+This repository already contains a trained SVM model (`svmMoviesPlot7Classes`) that discriminates between 7 classes of movie plots. The files `sample_pulpFiction`, `sample_forestgump` and `sample_lordoftherings` contain two plot examples that can be used as unknown documents for testing. 
 
 
 In order to classify these two files using `svmMoviesPlot7Classes`, the following command must be executed:
  ```
 python textClassification.py classifyFile -i sample_pulpFiction --methodname svmMoviesPlot7Classes
+
+python textClassification.py classifyFile -i sample_forestgump --methodname svmMoviesPlot7Classes
 
 python textClassification.py classifyFile -i sample_lordoftherings --methodname svmMoviesPlot7Classes
 ```
