@@ -37,14 +37,16 @@ Given a trained model, and an unknown document, the following command syntax is 
 python textClassification.py classifyFile -i <pathToUnknownDocument> --methodname <modelFileName>
 ```
 
-This repository already contains a trained SVM model (`svmMoviesPlot7Classes`) that discriminates between 7 classes of movie plots. The files `sample_pulpFiction`, `sample_forestgump` and `sample_lordoftherings` contain three plot examples that can be used as unknown documents for testing. 
+This repository already contains a trained SVM model (`svmMoviesPlot7Classes`) that discriminates between 7 classes of movie plots. The files `samples/sample_pulpFiction`, `samples/sample_forestgump` and `samples/sample_lordoftherings` contain three plot examples that can be used as unknown documents for testing. 
 
 
 In order to classify these three files using `svmMoviesPlot7Classes`, the following command must be executed:
  ```
-python textClassification.py classifyFile -i sample_pulpFiction --methodname svmMoviesPlot7Classes
+python textClassification.py classifyFile -i samples/sample_pulpFiction --methodname svmMoviesPlot7Classes
 
-python textClassification.py classifyFile -i sample_forestgump --methodname svmMoviesPlot7Classes
+python textClassification.py classifyFile -i samples/sample_forestgump --methodname svmMoviesPlot7Classes
 
-python textClassification.py classifyFile -i sample_lordoftherings --methodname svmMoviesPlot7Classes
+python textClassification.py classifyFile -i samples/sample_lordoftherings --methodname svmMoviesPlot7Classes
 ```
+
+The above examples return the most dominant content classes along with the respective normalized probabilities (sorted from highest to lowest).
