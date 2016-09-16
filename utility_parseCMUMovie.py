@@ -5,8 +5,8 @@ import ast
 # used to generate folder-seperated corpus from CMUMovie dataset 
 # just type python utility_parseCMUMovie.py in a terminal and the data will be downloaded and split to subfolders in the moviePlots/ path
 
-#os.system("wget http://www.cs.cmu.edu/~ark/personas/data/MovieSummaries.tar.gz")
-#os.system("tar -xvzf MovieSummaries.tar.gz")
+os.system("wget http://www.cs.cmu.edu/~ark/personas/data/MovieSummaries.tar.gz")
+os.system("tar -xvzf MovieSummaries.tar.gz")
 
 minRevenue = 20000000
 
